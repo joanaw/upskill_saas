@@ -19,7 +19,7 @@
             <span class="icon-bar"></span>
           </button>
           <%= link_to root_path, class: "navbar-brand" do %>
-            <i class="fa fa-group"></i>
+            <i class="fa fa-rocket"></i>
             IoT DevMatch
           <% end %>
         </div>
@@ -33,7 +33,12 @@
       </div>
     </nav>
     
-      <%= yield %>
+    <div class="container">
+        <% flash. each do |type, msg| %> 
+          <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+        <% end %>
+    </div>
+    <%= yield %>
       
-    </body>
+  </body>
 </html>
