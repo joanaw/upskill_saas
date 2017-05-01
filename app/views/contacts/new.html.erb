@@ -2,6 +2,9 @@
   <div class="row">
     <h3 class="text-center">Contact Us</h3>
     
+    <h5 class="text-center">Please fill out the quick form and we will be in touch
+    with lightening speed<h5><br>
+    
     <div class="col-md-4 col-md-offset-4">
       <div class="well">
         <%= form_for @contact do |f| %>
@@ -20,7 +23,7 @@
             <%= f.text_area :comments, class:'form-control' %>
           </div>
           
-          <%= f.submit 'Submit', class: 'btn btn-default' %>
+          <%= f.submit 'Submit', class: 'btn btn-success' %>
         <% end %>
       </div>
     </div>
