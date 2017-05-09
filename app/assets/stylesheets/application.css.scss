@@ -70,6 +70,11 @@ h1, h2, h3, h5 {
   padding-bottom: 100px;
 }
 
+// Hide alert message from divise gem (log out)
+.alert-notice {
+  display: none;
+}
+
 // Comments section resized only vertical
 textarea#contact_comments {
   resize: vertical;
