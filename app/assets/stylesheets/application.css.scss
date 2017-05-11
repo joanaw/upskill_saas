@@ -20,7 +20,7 @@
 @import "font-awesome";
 
 // Typography Styles
-h1, h2, h3, h5 { 
+h1, h2, h3, h4, h5 { 
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -78,4 +78,12 @@ h1, h2, h3, h5 {
 // Comments section resized only vertical
 textarea#contact_comments {
   resize: vertical;
+}
+
+.basic_info, .premium_info {
+  color: #614385 ;
+}
+
+.home-signup-links {
+  margin-top: 30px;
 }
