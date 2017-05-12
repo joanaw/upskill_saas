@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5 {
 }
 
 // Background Gradient 
-.navbar, .home-callout {
+.navbar, .home-callout, .footer {
   // Gradient obtain at uiGradients.com
   background: #614385;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #516395, #614385);  /* Chrome 10-25, Safari 5.1-6 */
@@ -84,6 +84,29 @@ textarea#contact_comments {
   color: #614385 ;
 }
 
+.social {
+  color: white;
+}
+
 .home-signup-links {
   margin-top: 30px;
+}
+
+// Requirements for footer in bootstrap 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 60px;
+  padding: 1rem;
+  text-align: center;
 }

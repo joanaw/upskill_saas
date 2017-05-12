@@ -46,6 +46,15 @@
           <%= content_tag :div, msg, class: "alert alert-#{type}" %>
         <% end %>
     </div>
+    
+    <div class="footer container">
+      <ul class="list-inline">
+        <li><h5 class="social">Follow Us</h5></li>
+        <li><%= link_to "Twitter", href="http://www.twitter.com", target: "blank", class: 'btn btn-link' %></li>
+        <li><%= link_to "Facebook", href="http://www.facebook.com", target: "blank", class: 'btn btn-link' %></li>
+        <li><%= link_to "GitHub", href="http://www.github.com", target: "blank", class: 'btn btn-link' %></li>
+      </ul>
+    </div>
     <%= yield %>
       
   </body>
