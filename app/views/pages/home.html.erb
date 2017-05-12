@@ -12,7 +12,11 @@
         <br/>
         <h5 class="basic_info text-center">Completely free</h5>
         <br/>
-        <%= link_to "Get Free Account", "#", class: 'btn btn-primary btn-lg btn-block' %>
+          <div class="text-center">
+            <span class="glyphicon glyphicon-user fa-3x"></span>
+          </div>  
+        <br/>
+        <%= link_to "Get Free Account", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
       </div>
     </div>
     <div class="col-md-6">
@@ -23,7 +27,11 @@
         <br/>
         <h5 class="premium_info text-center">$4.99 a month</h5>
         <br/>
-        <%= link_to "Get Premium Account", "#", class: 'btn btn-success btn-lg btn-block' %>
+          <div class="text-center">
+            <span class="glyphicon glyphicon-briefcase fa-3x"></span>
+          </div>  
+        <br/>
+        <%= link_to "Get Premium Account", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
       </div>
     </div>
   </div>
