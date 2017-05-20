@@ -67,12 +67,19 @@ h1, h2, h3, h4, h5 {
   color: white;
   margin-top: -20px;
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
-// Hide alert message from divise gem (log out)
-.alert-notice {
-  display: none;
+.flash-container {
+  position: absolute;
+  width: 100%;
+}
+
+.alert-notice, .alert-alert {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.18);
+  margin-top: -14px;
 }
 
 // Comments section resized only vertical
@@ -99,14 +106,14 @@ html {
 }
 
 body {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .footer {
   position: absolute;
   bottom: 0px;
   width: 100%;
-  height: 50px;
+  height: 40px;
   padding: 1rem;
   text-align: center;
 }
