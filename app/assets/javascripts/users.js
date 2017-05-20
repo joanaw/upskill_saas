@@ -5,7 +5,7 @@ $(document).on('turbolinks:load', function(){
   // Set Stripe Public Key.
   Stripe.setPublishableKey( $('meta[name="stripe-key"]').attr('content') );
   var theForm = $('#pro_form');
-  var submitBtn = $('#form-submit-btn');
+  var submitBtn = $('#form-signup-btn');
   
   // When user click submit button, 
   submitBtn.click(function(event){
