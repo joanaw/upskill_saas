@@ -19,12 +19,12 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-// Typography Styles
+// Typography Styles.
 h1, h2, h3, h4, h5 { 
   font-family: 'Open Sans', sans-serif;
 }
 
-// Background Gradient 
+// Background Gradient. 
 .navbar, .home-callout, .footer {
   // Gradient obtain at uiGradients.com
   background: #614385;  /* fallback for old browsers */
@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5 {
   background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-// Nav Styles
+// Nav Styles.
 .navbar {
   border: none;  
 }
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-// Home Page Styles 
+// Home Page Styles. 
 .home-callout {
   color: white;
   margin-top: -20px;
@@ -82,12 +82,12 @@ h1, h2, h3, h4, h5 {
   margin-top: -14px;
 }
 
-// Comments section resized only vertical
-textarea#contact_comments {
+// Comments section resized only vertical.
+#contact_comments {
   resize: vertical;
 }
 
-.basic_info, .premium_info, .about_us, .call_action {
+.basic_info, .premium_info, .about_us, .call_action, .message_us {
   color: #614385;
 }
 
@@ -111,7 +111,7 @@ textarea#contact_comments {
   margin-top: 30px;
 }
 
-
+// Included stylings for social media links.
 .social {
   color: white;
 }
@@ -120,7 +120,7 @@ textarea#contact_comments {
   margin-top: 30px;
 }
 
-// Requirements for footer in bootstrap 
+// Requirements for footer in bootstrap. 
 html {
   position: relative;
   min-height: 100%;
