@@ -87,9 +87,30 @@ textarea#contact_comments {
   resize: vertical;
 }
 
-.basic_info, .premium_info {
-  color: #614385 ;
+.basic_info, .premium_info, .about_us, .call_action {
+  color: #614385;
 }
+
+#about_info {
+  font-size: 16px;
+}
+
+.globe {
+  margin-top: 60px;
+}
+
+.glyphicon {
+  color: #614385;
+}
+
+.glyphicon.glyphicon-globe {
+  font-size: 80px;
+}
+
+.call_action {
+  margin-top: 30px;
+}
+
 
 .social {
   color: white;
