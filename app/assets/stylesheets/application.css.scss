@@ -82,12 +82,12 @@ h1, h2, h3, h4, h5 {
   margin-top: -14px;
 }
 
-// Comments section resized only vertical.
+// Comments and profile description sections are resized vertically.
 #contact_comments, #profile_description {
   resize: vertical;
 }
 
-.basic_info, .premium_info, .about_us, .call_action, .message_us {
+.basic_info, .premium_info, .about_us, .call_action, .message_us, .welcome_back {
   color: #614385;
 }
 

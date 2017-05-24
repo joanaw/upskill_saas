@@ -2,8 +2,8 @@
   <div class="row">
     <div class="col-md-4 col-md-offset-4">
       <div class="well">
-        <h3 class="text-center">Who's there?</h3>
-        <br>
+        <h3 class="text-center welcome_back">Who's there?</h3>
+        <br />
         <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
           <div class="field form-group">
             <%= f.label :email %><br />
@@ -12,7 +12,7 @@
         
           <div class="field form-group">
             <%= f.label :password %><br />
-            <%= f.password_field :password, autocomplete: "off",class: 'form-control' %>
+            <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
           </div>
         
           <% if devise_mapping.rememberable? -%>
@@ -23,7 +23,7 @@
           <% end -%>
         
           <div class="actions form-group">
-            <%= f.submit "Let me in", class: 'btn btn-info btn-block' %>
+            <%= f.submit "Let me in!", class: 'btn btn-info btn-block' %>
           </div>
         <% end %>
         
