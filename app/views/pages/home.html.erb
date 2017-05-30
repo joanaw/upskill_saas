@@ -7,9 +7,10 @@
     <% if user_signed_in? %>
       <div class="col-md-6">
         <div class="well">
-          <h3 class="text-center">Your Profile</h3>
+          <h3 class="text-center profile-section">Your Profile</h3>
+          <br/>
           <% if current_user.profile %>
-            <%= link_to "Edit your profile", "#", class: 'btn btn-default btn-lg btn-block' %>
+            <%= link_to "Edit your profile", edit_user_profile_path(user_id: current_user.id) , class: 'btn btn-default btn-lg btn-block' %>
             <%= link_to "View your profile", user_path(id: current_user.id), class: 'btn btn-info btn-lg btn-block' %>
           <% else %>
             <p>Create your profile so that you can share your interests and information with the IoT community.</p>
@@ -19,8 +20,9 @@
       </div>
       <div class="col-md-6">
         <div class="well">
-          <h3 class="text-center">The IoT Network</h3>
-          <p>Visit the community page to meet other developers, product leaders, data scientist and investors!</p>
+          <h3 class="text-center network">The IoT Network</h3>
+          <p class="network">Visit the community page to meet other developers, product leaders, data scientist and investors. Get noticed now! </p>
+          <br/>
           <%= link_to "Explore", "#", class: 'btn btn-primary btn-lg btn-block' %>
         </div>
       </div>
