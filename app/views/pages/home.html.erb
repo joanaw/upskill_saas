@@ -11,10 +11,10 @@
           <br/>
           <% if current_user.profile %>
             <%= link_to "Edit your profile", edit_user_profile_path(user_id: current_user.id) , class: 'btn btn-default btn-lg btn-block' %>
-            <%= link_to "View your profile", user_path(id: current_user.id), class: 'btn btn-info btn-lg btn-block' %>
+            <%= link_to "View your profile", user_path(id: current_user.id), class: 'btn btn-success btn-lg btn-block' %>
           <% else %>
-            <p>Create your profile so that you can share your interests and information with the IoT community.</p>
-            <%= link_to "Create Your Profile", new_user_profile_path(user_id: current_user.id), class: 'btn btn-default btn-lg btn-block' %>
+            <p class="profile-section-info">Create your profile so that you can share your interests and information with the IoT community.</p>
+            <%= link_to "Create Your Profile", new_user_profile_path(user_id: current_user.id), class: 'btn btn-success btn-lg btn-block' %>
           <% end %>  
         </div>
       </div>
@@ -23,7 +23,7 @@
           <h3 class="text-center network">The IoT Network</h3>
           <p class="network">Visit the community page to meet other developers, product leaders, data scientist and investors. Get noticed now! </p>
           <br/>
-          <%= link_to "Explore now!", users_path, class: 'btn btn-primary btn-lg btn-block' %>
+          <%= link_to "Explore now!", users_path, class: 'btn btn-info btn-lg btn-block' %>
         </div>
       </div>
     <% else %>
@@ -31,9 +31,9 @@
         <div class="well">
           <h2 class="basic_info text-center">Basic Membership</h2>
           <br/>
-          <h5 class="basic_info text-center">Sign up and get basic access to the community, publications and free training courses</h5>
+          <h5 class="basic_info text-center">Sign up and get a basic access to the community. Meet fellow developers, data scientist, entrepeneurs and investors!</h5>
           <br/>
-          <h5 class="basic_info text-center">Completely free</h5>
+          <h5 class="basic_info_price text-center"><strong>Completely free</strong></h5>
           <br/>
             <div class="text-center">
               <span class="glyphicon glyphicon-user fa-3x"></span>
@@ -48,7 +48,7 @@
           <br/>
           <h5 class="premium_info text-center">Sign up for the premium account, get full access to the community, and find the perfect business partner for your project!</h5>
           <br/>
-          <h5 class="premium_info text-center">$4.99 a month</h5>
+          <h5 class="premium_info_price text-center"><strong>$4.99/month</strong></h5>
           <br/>
             <div class="text-center">
               <span class="glyphicon glyphicon-briefcase fa-3x"></span>

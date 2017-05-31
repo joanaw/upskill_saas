@@ -1,6 +1,9 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
+      <h1 class="text-center users-index">The IoT DevMatch Community</h2>
+      <p class="text-center users-index">Welcome to the DevMatch community. Users must fill out a profile in order to be visible in the community page</p>
+      <br/>
       <ul class="list-unstyled">
         <% @users.each do |user| %>
           <% if user.profile %>
@@ -13,7 +16,7 @@
                     <% end %>
                   <% end %>
                 </div>
-                <div class="users-index">
+                <div>
                   <%= link_to user do %>
                     <h3><%= user.profile.first_name %> <%= user.profile.last_name %></h3>
                   <% end %>
