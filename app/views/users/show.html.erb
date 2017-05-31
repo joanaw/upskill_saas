@@ -7,10 +7,12 @@
     <div class="col-md-6">
       <h2><%= @user.profile.first_name %> <%= @user.profile.last_name %></h2>
       <h3><span class="job-title-icon"><%= job_title_icon %></span><%= @user.profile.job_title %></h3>
+      <br/>
       <div class="well profile-block profile-description">
         <h4>Description</h4>
         <%= @user.profile.description %>
       </div>
+      <br/>
       <% if current_user.plan_id == 2 %>
         <div class="well profile-block profile-contact">
           <h4>Contact Information</h4>
