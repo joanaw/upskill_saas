@@ -25,19 +25,19 @@ $(document).on('turbolinks:load', function(){
     // Validate card number.
     if(!Stripe.card.validateCardNumber(ccNUM)) {
       error = true;
-      alert('The credit card number appears to ivalid');
+      alert('The credit card number appears to be invalid');
     }
     
     // Validate CVC number.
     if(!Stripe.card.validateCVC(cvcNum)) {
       error = true;
-      alert('The CVC number appears to ivalid');
+      alert('The CVC number appears to be invalid');
     }
     
     // Validate expiration date.
     if(!Stripe.card.validateExpiry(expMonth, expYear)) {
       error = true;
-      alert('The expiration date appears to ivalid');
+      alert('The expiration date appears to be invalid');
     }
     
     if (error) {
